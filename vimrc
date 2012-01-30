@@ -1,3 +1,9 @@
+" pathogen install
+call pathogen#infect()
+
+syntax on
+filetype plugin indent on
+
 " do not save temporary files
 set backup
 set backupdir=~/.vim/backup
