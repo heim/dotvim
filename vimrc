@@ -41,3 +41,6 @@ set textwidth=72
 
 " show line numbers
 set number
+
+
+set encoding=utf-8
