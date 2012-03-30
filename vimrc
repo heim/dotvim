@@ -32,15 +32,27 @@ if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
-set textwidth=72
-
+"set textwidth=72
+"set formatoptions-=c
 " show line numbers
 set number
 
+" turn on and off search highlighting
+map ,s :set hlsearch!<CR>
+
+" go to next nd previous buffer
+map ,b :bp<CR>
+map ,n :bn<CR>
 
 set encoding=utf-8
+
+
+syntax enable
+set t_Co=256
+set background=dark
+colorscheme grb256
