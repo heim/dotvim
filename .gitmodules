@@ -16,3 +16,6 @@
 [submodule "bundle/change-inside-surroundings"]
 	path = bundle/change-inside-surroundings
 	url = git://github.com/briandoll/change-inside-surroundings.vim.git
+[submodule "bundle/yaml"]
+	path = bundle/yaml
+	url = https://github.com/avakhov/vim-yaml.git
