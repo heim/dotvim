@@ -28,13 +28,16 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-r>
 
-" ,r returns to file explorer
-map ,r :Rexplore<CR> 
 
 " Source the vimrc file after saving it
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
+
+autocmd VimEnter * RainbowParenthesesToggle
+autocmd Syntax * RainbowParenthesesLoadRound
+autocmd Syntax * RainbowParenthesesLoadSquare
+autocmd Syntax * RainbowParenthesesLoadBraces
 
 set tabstop=2
 set shiftwidth=2
@@ -44,6 +47,9 @@ set expandtab
 "set textwidth=72
 "set formatoptions-=c
 
+" ,r returns to file explorer
+map ,r :Rexplore<CR> 
+
 " turn on and off search highlighting
 map ,s :set hlsearch!<CR>
 
@@ -51,9 +57,16 @@ map ,s :set hlsearch!<CR>
 map ,b :bp<CR>
 map ,n :bn<CR>
 
+"move lines up and down
+map - ddp
+map _ ddkP
+
+"make current word uppercase
+imap <c-u> <esc>viwUea
 set encoding=utf-8
 
-
+"edit my vimrc-file
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 syntax enable
 set t_Co=256
 set background=dark
