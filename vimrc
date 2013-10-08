@@ -35,9 +35,9 @@ if has("autocmd")
 endif
 
 autocmd VimEnter * RainbowParenthesesToggle
-autocmd Syntax * RainbowParenthesesLoadRound
-autocmd Syntax * RainbowParenthesesLoadSquare
-autocmd Syntax * RainbowParenthesesLoadBraces
+autocmd VimEnter * RainbowParenthesesLoadRound
+autocmd VimEnter * RainbowParenthesesLoadSquare
+autocmd VimEnter * RainbowParenthesesLoadBraces
 
 set tabstop=2
 set shiftwidth=2
