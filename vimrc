@@ -3,7 +3,7 @@ set nocompatible
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/dotvim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -57,10 +57,10 @@ if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
-autocmd VimEnter * RainbowParenthesesToggle
-autocmd VimEnter * RainbowParenthesesLoadRound
-autocmd VimEnter * RainbowParenthesesLoadSquare
-autocmd VimEnter * RainbowParenthesesLoadBraces
+"autocmd VimEnter * RainbowParenthesesToggle
+"autocmd VimEnter * RainbowParenthesesLoadRound
+"autocmd VimEnter * RainbowParenthesesLoadSquare
+"autocmd VimEnter * RainbowParenthesesLoadBraces
 
 set tabstop=2
 set shiftwidth=2
