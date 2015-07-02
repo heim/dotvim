@@ -3,7 +3,7 @@ set nocompatible
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/dotvim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -18,6 +18,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'briandoll/change-inside-surroundings.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'tpope/vim-markdown.git'
+Plugin 'avakhov/vim-yaml.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
