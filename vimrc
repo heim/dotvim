@@ -21,6 +21,7 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-markdown.git'
 Plugin 'avakhov/vim-yaml.git'
 Plugin 'markcornick/vim-terraform'
+Plugin 'kchmck/vim-coffee-script'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
