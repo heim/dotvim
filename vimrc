@@ -22,7 +22,7 @@ Plugin 'tpope/vim-markdown.git'
 Plugin 'avakhov/vim-yaml.git'
 Plugin 'markcornick/vim-terraform'
 Plugin 'kchmck/vim-coffee-script'
-
+Plugin 'fatih/vim-go'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
