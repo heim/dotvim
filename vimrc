@@ -14,6 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+Plugin 'derekwyatt/vim-scala'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'briandoll/change-inside-surroundings.vim'
