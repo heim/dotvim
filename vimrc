@@ -20,11 +20,12 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'briandoll/change-inside-surroundings.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'tpope/vim-markdown.git'
 Plugin 'avakhov/vim-yaml.git'
 Plugin 'markcornick/vim-terraform'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'fatih/vim-go'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
@@ -35,6 +36,7 @@ filetype plugin indent on
 
 " fix madness with rbenv
 set shell=/bin/bash
+let g:vim_markdown_folding_disabled=1
 
 " do not save temporary files
 set backup
