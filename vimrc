@@ -26,6 +26,10 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'fatih/vim-go'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-salve'
+Plugin 'tpope/vim-projectionist'
+Plugin 'tpope/vim-dispatch'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
@@ -65,10 +69,10 @@ if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
-"autocmd VimEnter * RainbowParenthesesToggle
-"autocmd VimEnter * RainbowParenthesesLoadRound
-"autocmd VimEnter * RainbowParenthesesLoadSquare
-"autocmd VimEnter * RainbowParenthesesLoadBraces
+autocmd VimEnter * RainbowParenthesesActivate
+autocmd VimEnter * RainbowParenthesesLoadRound
+autocmd VimEnter * RainbowParenthesesLoadSquare
+autocmd VimEnter * RainbowParenthesesLoadBraces
 
 set tabstop=2
 set shiftwidth=2
